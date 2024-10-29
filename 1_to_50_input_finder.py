@@ -1,20 +1,22 @@
+#get info to a  list
+list_of_numbers = []
 #make a loop for user input 
 while True:
     while True: 
         try: 
-            age = int(input("input a number: "))
-            if age < 0 or age > 50:
+            #add definitions for valid age 
+            numbers = int(input("input a number: "))
+            if numbers < 0 or numbers > 50:
                 raise
             break
         except: 
             print("Only add numbers from 1 to 50")
-            
+    list_of_numbers = [numbers]
+
     retry = input("Do you want to input another number?: ")
 
     if retry == "no" or retry == "No" or retry == "No":
         break
-
-#add definitions for valid age 
 
 #get info to a  list 
 
