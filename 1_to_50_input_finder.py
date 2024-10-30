@@ -26,7 +26,7 @@ while True:
         except: 
             print("Only add numbers from 1 to 50") 
 
-    print("WARING: inputing words other than [Yes] will make the program stop asking you for inputs")
+    print("WARNING: inputing words other than [Yes] will make the program stop asking you for inputs")
 
     retry = input("Do you want to input another number?: ").strip().lower()
 
