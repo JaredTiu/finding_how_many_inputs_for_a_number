@@ -53,5 +53,3 @@ while True:
         print("31-40: ", count_of_31_to_40)
         print("41-50: ", count_of_41_to_50)
         break  
-    
-
