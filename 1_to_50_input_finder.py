@@ -25,10 +25,12 @@ while True:
             break
         except: 
             print("Only add numbers from 1 to 50") 
-    
+
+    print("WARING: inputing words other than [Yes] will make the program stop asking you for inputs")
+
     retry = input("Do you want to input another number?: ").strip().lower()
+
     if retry != "yes":
-        print("invalid input, only Yes/No")
         print("Showing the count of the numbers inputed.")
         break
     #if they stop inputing print how many inputs
