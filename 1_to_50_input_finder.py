@@ -4,7 +4,6 @@ list_of_11_to_20 = []
 list_of_21_to_30 = []
 list_of_31_to_40 = []
 list_of_41_to_50 = []
-
 #make a loop for user input 
 while True:
     while True: 
@@ -25,31 +24,33 @@ while True:
                 raise
             break
         except: 
-            print("Only add numbers from 1 to 50")
-    retry = input("Do you want to input another number?: ")
-
+            print("Only add numbers from 1 to 50") 
+    
+    retry = input("Do you want to input another number?: ").strip().lower()
+    if retry != "yes":
+        print("invalid input, only Yes/No")
+        print("Showing the count of the numbers inputed.")
+        break
     #if they stop inputing print how many inputs
-    if retry == "no" or retry == "No" or retry == "No":
         #find a way to detect how many inputs for a number in that list
-        count_of_1_to_10 = 0
-        count_of_11_to_20 = 0
-        count_of_21_to_30 = 0
-        count_of_31_to_40 = 0
-        count_of_41_to_50 = 0
-        for digit in list_of_1_to_10:
-            count_of_1_to_10 += 1
-        for digit in list_of_11_to_20: 
-            count_of_11_to_20 += 1
-        for digit in list_of_21_to_30: 
-            count_of_21_to_30 += 1 
-        for digit in list_of_31_to_40: 
-            count_of_31_to_40 += 1
-        for digit in list_of_41_to_50: 
-            count_of_41_to_50 += 1
+count_of_1_to_10 = 0
+count_of_11_to_20 = 0
+count_of_21_to_30 = 0
+count_of_31_to_40 = 0
+count_of_41_to_50 = 0
+for digit in list_of_1_to_10:
+    count_of_1_to_10 += 1
+for digit in list_of_11_to_20: 
+    count_of_11_to_20 += 1
+for digit in list_of_21_to_30: 
+    count_of_21_to_30 += 1 
+for digit in list_of_31_to_40: 
+    count_of_31_to_40 += 1
+for digit in list_of_41_to_50: 
+    count_of_41_to_50 += 1
 
-        print("1-10: ", count_of_1_to_10)
-        print("11-20: ", count_of_11_to_20)
-        print("21-30: ", count_of_21_to_30)
-        print("31-40: ", count_of_31_to_40)
-        print("41-50: ", count_of_41_to_50)
-        break  
+print("1-10: ", count_of_1_to_10)
+print("11-20: ", count_of_11_to_20)
+print("21-30: ", count_of_21_to_30)
+print("31-40: ", count_of_31_to_40)
+print("41-50: ", count_of_41_to_50)
