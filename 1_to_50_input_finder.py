@@ -34,8 +34,7 @@ while True:
     if retry != "yes":
         print("Showing the count of the numbers inputed.")
         break
-    #if they stop inputing print how many inputs
-        #find a way to detect how many inputs for a number in that list
+#find a way to detect how many inputs for a number in that list
 count_of_1_to_10 = 0
 count_of_11_to_20 = 0
 count_of_21_to_30 = 0
